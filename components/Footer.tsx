@@ -4,9 +4,9 @@ import { siteConfig } from "../site.config";
 
 const Footer = () => {
   return (
-    <footer className="block w-screen text-center text-white bg-gray-900">
+    <footer className="block w-screen text-center text-gray-500 bg-green-200">
       <div className="container flex flex-col items-center w-full max-w-2xl px-6 pt-6 mx-auto">
-        <div className="flex justify-center mb-6 text-white">
+        <div className="flex justify-center mb-6 text-gray-500">
           {/* Twitter */}
           {siteConfig.twitterUrl && (
             <a href={siteConfig.twitterUrl}>
