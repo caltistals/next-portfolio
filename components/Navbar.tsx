@@ -5,7 +5,7 @@ import { siteConfig } from "../site.config";
 const Navbar = () => {
   return (
     <nav className="w-full py-3 text-gray-500 focus:text-gray-700 navbar navbar-expand-lg navbar-light">
-      <div className="flex flex-wrap items-center justify-between w-full max-w-2xl px-6 mx-auto container-fluid">
+      <div className="flex flex-wrap items-center justify-between w-full max-w-3xl px-6 mx-auto container-fluid">
         <div
           className="flex flex-wrap justify-between w-full rounded-md bg-grey-light"
           aria-label="breadcrumb"
