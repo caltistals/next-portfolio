@@ -22,7 +22,7 @@ const ArticleCard: FC<ArticleCardProps> = ({ page }) => {
           </div>
           {/* title & date*/}
           <div className="px-6 pt-4 ">
-            <h2 className="mb-3 text-base font-medium ">
+            <h2 className="mb-3 text-base font-medium hover:text-blue-400">
               {getText(page.properties.name.title)}
             </h2>
             <p className="text-xs text-gray-700">
@@ -36,7 +36,7 @@ const ArticleCard: FC<ArticleCardProps> = ({ page }) => {
               (tag, index) => (
                 <span
                   key={index}
-                  className="px-2 py-1 mb-2 mr-2 text-sm font-normal break-words bg-gray-200 rounded-lg"
+                  className="px-2 py-1 mb-2 mr-2 text-sm font-normal break-words bg-gray-200 rounded-lg hover:bg-blue-300"
                 >
                   {`#${tag}`}
                 </span>
