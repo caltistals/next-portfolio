@@ -6,11 +6,11 @@ import Navbar from "./Navbar";
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="relative overflow-hidden">
-      <div className="flex flex-col items-center w-full max-w-3xl mx-auto ">
+      <div className="flex w-full mx-auto ">
         <Navbar />
         <main className="w-full px-4 pb-12">{children}</main>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
