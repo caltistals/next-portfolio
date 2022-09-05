@@ -7,7 +7,7 @@ const ArticleCard: FC<ArticleCardProps> = ({ page }) => {
   return (
     <Link href={`/articles/${getText(page.properties.slug.rich_text)}`}>
       <a className="flex justify-center">
-        <div className="grid content-between w-full max-w-sm my-4 overflow-hidden transition-transform bg-white shadow-lg rounded-3xl md:my-0 hover:scale-105">
+        <div className="grid content-between w-full max-w-xs my-4 overflow-hidden transition-transform bg-white shadow-lg rounded-3xl md:my-0 hover:scale-105">
           {/* image */}
           <div>
             <Image
@@ -15,7 +15,7 @@ const ArticleCard: FC<ArticleCardProps> = ({ page }) => {
               src={getCover(page.cover)}
               alt=""
               objectFit="cover"
-              width={400}
+              width={330}
               height={200}
               quality={30}
             />
