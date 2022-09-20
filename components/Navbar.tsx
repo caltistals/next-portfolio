@@ -4,66 +4,102 @@ import { siteConfig } from "../site.config";
 
 const Navbar = () => {
   return (
-    <nav className="w-full py-3 text-gray-500 focus:text-gray-700 navbar navbar-expand-lg navbar-light">
-      <div className="flex flex-wrap items-center justify-between w-full max-w-3xl px-6 mx-auto container-fluid">
-        <div
-          className="flex flex-wrap justify-between w-full rounded-md bg-grey-light"
-          aria-label="breadcrumb"
-        >
-          <Link href="/">
-            <a className="flex text-xl text-left text-gray-500 hover:text-gray-600">
-              <svg
-                className="w-6 h-6 pt-1 mr-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-                ></path>
-              </svg>
-              {siteConfig.title}
-            </a>
-          </Link>
-          {/* Hamburger Button */}
-          <button className="inline-flex items-center p-1 ml-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    <nav className="fixed z-10 w-screen bg-white border-b-2 md:sticky md:border-b-0 md:border-r-2 h-14 md:h-screen md:top-0 md:w-16">
+      <div className="mt-5 ">
+        <ul className="flex justify-around md:items-center md:flex-col md:justify-start">
+          <li className="relative mb-5 group ">
             <svg
-              className="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
+              className="w-6 h-6 hover:text-blue-400 hover:scale-110"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
               ></path>
             </svg>
-          </button>
-          <div className="hidden w-full md:block md:w-auto">
-            <ul className="flex flex-col flex-wrap justify-between border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium md:border-0 md:bg-white ">
-              <li>
-                <Link href="#">
-                  <a className="hover:text-gray-700">works</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <a className="hover:text-gray-700">skils</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <a className="hover:text-gray-700">posts</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+            <span
+              className="w-[74px] invisible rounded text-[12px] 
+              font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-11
+               group-hover:visible opacity-100 absolute text-center top-10  -left-6"
+            >
+              Home
+            </span>
+          </li>
+          <li className="relative mb-5 group">
+            <svg
+              className="w-6 h-6 hover:text-blue-500 hover:scale-110"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              ></path>
+            </svg>
+            <span
+              className="w-[74px] invisible rounded text-[12px] 
+              font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-11 top-10  -left-6
+               group-hover:visible opacity-100 absolute text-center "
+            >
+              About Me
+            </span>
+          </li>
+          <li className="relative mb-5 group">
+            <svg
+              className="w-6 h-6 hover:text-blue-500 hover:scale-110"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              ></path>
+            </svg>
+            <span
+              className="w-[74px] invisible rounded text-[12px] 
+              font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-11 top-10 -left-6
+               group-hover:visible opacity-100  absolute text-center"
+            >
+              Portfolio
+            </span>
+          </li>
+          <li className="relative mb-5 group">
+            <svg
+              className="w-6 h-6 hover:text-blue-500 hover:scale-110"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+              ></path>
+            </svg>
+            <span
+              className="w-[74px] invisible rounded text-[12px] 
+              font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-11 top-10 -left-6
+               group-hover:visible opacity-100 absolute text-center"
+            >
+              Articles
+            </span>
+          </li>
+        </ul>
       </div>
     </nav>
   );

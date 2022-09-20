@@ -1,8 +1,11 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import ArticleCard from "../components/ArticleCard";
+import ArticleSection from "../components/ArticleSection";
 import Layout from "../components/Layout";
+import ProfileSection from "../components/ProfileSection";
 import styles from "../styles/Home.module.css";
 import { IndexProps } from "../types/types";
 import { fetchPages } from "../utils/notion";
@@ -19,14 +22,9 @@ export const getStaticProps: GetStaticProps = async () => {
 const Home: NextPage<IndexProps> = ({ pages }) => {
   return (
     <Layout>
-      <div className="pt-12">
-        <h1 className="mb-8 text-5xl ">Caltistals</h1>
-        <div className="grid w-full my-12 mt-10 sm:gap-6 sm:grid-cols-2 xl:gap-6 xl:grid-cols-3">
-          {/* Card */}
-          {pages.map((page, index) => (
-            <ArticleCard key={index} page={page} />
-          ))}
-        </div>
+      <div className="flex flex-col items-center justify-center">
+        <ProfileSection />
+        <ArticleSection pages={pages} title={"📰 New Posts"} />
       </div>
     </Layout>
   );

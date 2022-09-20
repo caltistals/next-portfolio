@@ -6,6 +6,10 @@ export type LayoutProps = {
   children: ReactNode;
 };
 
+export type ArticleSectionProps = {
+  pages: PageType[];
+};
+
 export type IndexProps = { pages: PageType[] };
 
 export type ArticleCardProps = {

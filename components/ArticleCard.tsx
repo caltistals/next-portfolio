@@ -7,22 +7,22 @@ const ArticleCard: FC<ArticleCardProps> = ({ page }) => {
   return (
     <Link href={`/articles/${getText(page.properties.slug.rich_text)}`}>
       <a className="flex justify-center">
-        <div className="grid content-between w-full max-w-sm my-4 overflow-hidden transition-transform bg-white shadow-lg rounded-3xl md:my-0 hover:scale-105">
+        <div className="grid content-between w-full max-w-xs my-4 overflow-hidden transition-transform bg-white border border-gray-200 rounded-3xl md:my-0 group">
           {/* image */}
           <div>
             <Image
-              className="static w-full h-auto "
+              className="static w-full h-auto transition duration-200 group-hover:scale-110"
               src={getCover(page.cover)}
               alt=""
               objectFit="cover"
-              width={400}
-              height={200}
+              width={330}
+              height={150}
               quality={30}
             />
           </div>
           {/* title & date*/}
           <div className="px-6 pt-4 ">
-            <h2 className="mb-3 text-base font-medium hover:text-blue-400">
+            <h2 className="mb-3 text-base font-medium group-hover:text-blue-500">
               {getText(page.properties.name.title)}
             </h2>
             <p className="text-xs text-gray-700">
@@ -36,7 +36,7 @@ const ArticleCard: FC<ArticleCardProps> = ({ page }) => {
               (tag, index) => (
                 <span
                   key={index}
-                  className="px-2 py-1 mb-2 mr-2 text-sm font-normal break-words bg-gray-200 rounded-lg hover:bg-blue-300"
+                  className="px-2 py-1 mb-2 mr-2 text-sm font-normal break-words bg-gray-200 rounded-lg hover:text-blue-500"
                 >
                   {`#${tag}`}
                 </span>
