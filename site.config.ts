@@ -1,6 +1,6 @@
 export const siteConfig = {
   title: "Caltistals",
-  twitterUrl: "",
+  twitterUrl: "https://twitter.com/caltistals",
   instagramUrl: "",
   githubUrl: "https://github.com/caltistals",
 };
