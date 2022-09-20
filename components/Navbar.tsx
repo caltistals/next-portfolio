@@ -4,9 +4,9 @@ import { siteConfig } from "../site.config";
 
 const Navbar = () => {
   return (
-    <nav className="w-screen border-b-2 md:border-r-2 h-14 md:h-screen md:w-14">
+    <nav className="fixed z-10 w-screen bg-white border-b-2 md:sticky md:border-b-0 md:border-r-2 h-14 md:h-screen md:top-0 md:w-16">
       <div className="mt-5 ">
-        <ul className="sticky top-0 flex h-screen md:items-center md:flex-col">
+        <ul className="flex justify-around md:items-center md:flex-col md:justify-start">
           <li className="relative mb-5 group ">
             <svg
               className="w-6 h-6 hover:text-blue-400 hover:scale-110"
@@ -23,16 +23,16 @@ const Navbar = () => {
               ></path>
             </svg>
             <span
-              className="opacity-0 w-[74px] invisible rounded text-[12px] 
-              font-bold text-white py-1 bg-slate-600 -top-0 left-11
-               group-hover:visible opacity-100 absolute text-center"
+              className="w-[74px] invisible rounded text-[12px] 
+              font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-11
+               group-hover:visible opacity-100 absolute text-center top-10  -left-6"
             >
               Home
             </span>
           </li>
           <li className="relative mb-5 group">
             <svg
-              className="w-6 h-6 hover:text-blue-400 hover:scale-110"
+              className="w-6 h-6 hover:text-blue-500 hover:scale-110"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -46,16 +46,16 @@ const Navbar = () => {
               ></path>
             </svg>
             <span
-              className="opacity-0 w-[74px] invisible rounded text-[12px] 
-              font-bold text-white py-1 bg-slate-600 -top-0 left-11
-               group-hover:visible opacity-100 absolute text-center"
+              className="w-[74px] invisible rounded text-[12px] 
+              font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-11 top-10  -left-6
+               group-hover:visible opacity-100 absolute text-center "
             >
               About Me
             </span>
           </li>
           <li className="relative mb-5 group">
             <svg
-              className="w-6 h-6 hover:text-blue-400 hover:scale-110"
+              className="w-6 h-6 hover:text-blue-500 hover:scale-110"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -69,11 +69,34 @@ const Navbar = () => {
               ></path>
             </svg>
             <span
-              className="opacity-0 w-[74px] invisible rounded text-[12px] 
-              font-bold text-white py-1 bg-slate-600 -top-0 left-11
-               group-hover:visible opacity-100 absolute text-center"
+              className="w-[74px] invisible rounded text-[12px] 
+              font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-11 top-10 -left-6
+               group-hover:visible opacity-100  absolute text-center"
             >
               Portfolio
+            </span>
+          </li>
+          <li className="relative mb-5 group">
+            <svg
+              className="w-6 h-6 hover:text-blue-500 hover:scale-110"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+              ></path>
+            </svg>
+            <span
+              className="w-[74px] invisible rounded text-[12px] 
+              font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-11 top-10 -left-6
+               group-hover:visible opacity-100 absolute text-center"
+            >
+              Articles
             </span>
           </li>
         </ul>
