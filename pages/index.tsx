@@ -6,12 +6,11 @@ import ArticleCard from "../components/ArticleCard";
 import ArticleSection from "../components/ArticleSection";
 import Layout from "../components/Layout";
 import ProfileSection from "../components/ProfileSection";
-import styles from "../styles/Home.module.css";
 import { IndexProps } from "../types/types";
 import { fetchPages } from "../utils/notion";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { results } = await fetchPages({});
+  const { results } = await fetchPages({ isToppage: true });
   return {
     props: {
       pages: results ? results : [],
@@ -24,7 +23,7 @@ const Home: NextPage<IndexProps> = ({ pages }) => {
     <Layout>
       <div className="flex flex-col items-center justify-center">
         <ProfileSection />
-        <ArticleSection pages={pages} title={"📰 New Posts"} />
+        <ArticleSection pages={pages} title={"New Posts"} isToppage={true} />
       </div>
     </Layout>
   );

@@ -6,9 +6,11 @@ const DATABASE_ID = process.env.NOTION_DATABASE_ID as string;
 export const fetchPages = async ({
   slug,
   tag,
+  isToppage,
 }: {
   slug?: string;
   tag?: string;
+  isToppage: boolean;
 }) => {
   const and: any = [
     {
@@ -54,6 +56,7 @@ export const fetchPages = async ({
         direction: "descending",
       },
     ],
+    page_size: isToppage ? 3 : 100,
   });
 };
 
