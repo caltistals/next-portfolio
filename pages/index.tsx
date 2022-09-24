@@ -1,10 +1,7 @@
 import type { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import ArticleCard from "../components/ArticleCard";
 import ArticleSection from "../components/ArticleSection";
 import Layout from "../components/Layout";
+import MetaData from "../components/MetaData";
 import ProfileSection from "../components/ProfileSection";
 import { IndexProps } from "../types/types";
 import { fetchPages } from "../utils/notion";
@@ -15,12 +12,14 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       pages: results ? results : [],
     },
+    revalidate: 10,
   };
 };
 
 const Home: NextPage<IndexProps> = ({ pages }) => {
   return (
     <Layout>
+      <MetaData />
       <div className="flex flex-col items-center justify-center">
         <ProfileSection />
         <ArticleSection pages={pages} title={"New Posts"} isToppage={true} />
