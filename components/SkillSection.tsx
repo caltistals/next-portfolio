@@ -52,7 +52,7 @@ const SkillSection: React.FC = () => {
             </svg>
           </div>
           <div>
-            <h1 className="mb-1">Java</h1>
+            <h3 className="mb-1">Java</h3>
             <p className="mb-1 text-sm text-gray-400">
               <time>2020.05</time>
               <span>-</span>
@@ -119,7 +119,7 @@ const SkillSection: React.FC = () => {
             </svg>
           </div>
           <div>
-            <h1 className="mb-1">HTML</h1>
+            <h3 className="mb-1">HTML</h3>
             <p className="mb-1 text-sm text-gray-400">
               <time>2022.04</time>
               <span>-</span>
@@ -182,7 +182,7 @@ const SkillSection: React.FC = () => {
             </svg>
           </div>
           <div>
-            <h1 className="mb-1">CSS</h1>
+            <h3 className="mb-1">CSS</h3>
             <p className="mb-1 text-sm text-gray-400">
               <time>2022.04</time>
               <span>-</span>
@@ -221,7 +221,7 @@ const SkillSection: React.FC = () => {
             </svg>
           </div>
           <div>
-            <h1 className="mb-1">JavaScript</h1>
+            <h3 className="mb-1">JavaScript</h3>
             <p className="mb-1 text-sm text-gray-400">
               <time>2022.04</time>
               <span>-</span>
@@ -264,7 +264,7 @@ const SkillSection: React.FC = () => {
             </svg>
           </div>
           <div>
-            <h1 className="mb-1">TypeScript</h1>
+            <h3 className="mb-1">TypeScript</h3>
             <p className="mb-1 text-sm text-gray-400">
               <time>2022.07</time>
               <span>-</span>
@@ -295,7 +295,7 @@ const SkillSection: React.FC = () => {
             </svg>
           </div>
           <div>
-            <h1 className="mb-1">React</h1>
+            <h3 className="mb-1">React</h3>
             <p className="mb-1 text-sm text-gray-400">
               <time>2022.05</time>
               <span>-</span>
