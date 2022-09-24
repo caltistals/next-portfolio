@@ -1,7 +1,12 @@
+import { BlockType } from "notion-block-renderer";
 import { ParsedUrlQuery } from "querystring";
 import { ReactNode } from "react";
 
 /* Props用 */
+export type MetaDataProps = {
+  title?: string;
+};
+
 export type LayoutProps = {
   children: ReactNode;
 };
@@ -10,10 +15,21 @@ export type ArticleSectionProps = {
   pages: PageType[];
 };
 
+export type ProfileSectionProps = {
+  bio?: string;
+};
+
 export type IndexProps = { pages: PageType[] };
 
 export type ArticleCardProps = {
   page: PageType;
+};
+
+export type ArticleMetaProps = ArticleCardProps;
+
+export type ArticleProps = {
+  page: PageType;
+  blocks: BlockType[];
 };
 
 export type Params = ParsedUrlQuery & {
