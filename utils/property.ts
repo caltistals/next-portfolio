@@ -11,7 +11,7 @@ export const getText = (richTextArr: RichTextType[]): string => {
 export const getCover = (cover: PageType["cover"]) => {
   if (cover && cover.file) return cover.file.url;
   if (cover && cover.external) return cover.external.url;
-  return "/noimage.png";
+  return "/no_image_square.jpg";
 };
 
 export const getDate = (date: { start: string }) => {
