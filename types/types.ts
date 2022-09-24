@@ -25,6 +25,14 @@ export type ArticleCardProps = {
   page: PageType;
 };
 
+export type PortfolioCardProps = {
+  title: string;
+  description?: string;
+  slug: string;
+  github: string;
+  img: string;
+};
+
 export type ArticleMetaProps = ArticleCardProps;
 
 export type ArticleProps = {

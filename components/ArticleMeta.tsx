@@ -15,7 +15,7 @@ const ArticleMeta: React.FC<ArticleMetaProps> = ({ page }) => {
         objectFit="cover"
         width={640}
         height={360}
-        quality={50}
+        quality={100}
       />
 
       {/* page name */}
