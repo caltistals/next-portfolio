@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { siteConfig } from "../site.config";
+import { ProfileSectionProps } from "../types/types";
 
-const ProfileSection = () => {
+const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
   return (
     <section className="flex flex-col items-center justify-center max-w-4xl pt-12 mb-12">
       <div className="mb-3 ">
@@ -16,9 +17,10 @@ const ProfileSection = () => {
           quality={30}
         />
       </div>
-      <h2 className="mb-2 text-2xl">Caltistals</h2>
-      <p className="mb-2 text-sm text-gray-400"> Junior Web Engineer</p>
+      <h2 className="mb-2 text-4xl font-bold">Caltistals</h2>
+      <p className="mb-2 text-gray-400 s"> Junior Web Engineer</p>
       <p className="mb-3 text-sm text-gray-400">Kindai Univ.</p>
+      {bio && <p className="mb-3 text-sm text-gray-400">{bio}</p>}
       <div className="flex justify-center mb-6 text-gray-500">
         {/* Twitter */}
         {siteConfig.twitterUrl && (
