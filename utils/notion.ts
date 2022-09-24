@@ -61,5 +61,22 @@ export const fetchPages = async ({
 };
 
 export const fetchBlocksByPageId = async (pageId: string) => {
-  return await notion.blocks.children.list({ block_id: pageId });
+  const data: Record<string, any>[] = [];
+  let cursor: string | null | undefined = undefined;
+  while (true) {
+    const {
+      results,
+      next_cursor,
+    }: {
+      results: Record<string, any>[];
+      next_cursor: string | null | undefined;
+    } = await notion.blocks.children.list({
+      block_id: pageId,
+      start_cursor: cursor,
+    });
+    data.push(...results);
+    if (!next_cursor) break;
+    cursor = next_cursor;
+  }
+  return { results: data };
 };
