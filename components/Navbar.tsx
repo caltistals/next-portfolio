@@ -64,20 +64,24 @@ const Navbar = () => {
           </li>
           {/* Portfolio Icon */}
           <li className="relative mb-5 group">
-            <svg
-              className="w-6 h-6 hover:text-blue-500 hover:scale-110"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-              ></path>
-            </svg>
+            <Link href="/portfolio">
+              <a>
+                <svg
+                  className="w-6 h-6 hover:text-blue-500 hover:scale-110"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  ></path>
+                </svg>
+              </a>
+            </Link>
             <span
               className="w-[74px] invisible rounded text-[12px] 
               font-bold text-white py-1 bg-slate-600 md:-top-0 md:left-12 top-10 -left-6
