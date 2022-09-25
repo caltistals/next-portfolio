@@ -8,15 +8,17 @@ const ArticleMeta: React.FC<ArticleMetaProps> = ({ page }) => {
   return (
     <>
       {/* page cover */}
-      <Image
-        className="w-full max-w-screen-lg my-4 rounded-lg aspect-video"
-        src={getCover(page.cover)}
-        alt=""
-        objectFit="cover"
-        width={640}
-        height={360}
-        quality={100}
-      />
+      <div className="flex items-center justify-center">
+        <Image
+          className="w-full max-w-screen-lg my-4 rounded-lg aspect-video"
+          src={getCover(page.cover)}
+          alt=""
+          objectFit="cover"
+          width={640}
+          height={360}
+          quality={100}
+        />
+      </div>
 
       {/* page name */}
       <h1 className="my-8 text-3xl font-bold">

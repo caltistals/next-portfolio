@@ -48,12 +48,12 @@ const Article: NextPage<ArticleProps> = ({ page, blocks }) => {
       <MetaData title={`${getText(page.properties.name.title)}`} />
       <article className="flex flex-col ">
         {/* meta section */}
-        <div className="my-12">
+        <div className="my-12 ">
           <ArticleMeta page={page} />
         </div>
 
         {/* article */}
-        <div className="block my-12">
+        <div className="block max-w-4xl my-12">
           <NotionBlocks blocks={blocks} isCodeHighlighter={true} />
         </div>
       </article>
