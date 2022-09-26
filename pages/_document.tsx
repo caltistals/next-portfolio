@@ -5,6 +5,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
+          <meta charSet="utf-8" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
