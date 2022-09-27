@@ -1,19 +1,12 @@
 import type { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import ArticleCard from "../../components/ArticleCard";
-import ArticleSection from "../../components/ArticleSection";
 import Layout from "../../components/Layout";
 import MetaData from "../../components/MetaData";
 import PortfolioCard from "../../components/PortfolioCard";
-import ProfileSection from "../../components/ProfileSection";
-import { IndexProps } from "../../types/types";
-import { fetchPages } from "../../utils/notion";
 
 const AllPosts: NextPage = () => {
   return (
     <Layout>
+      <MetaData title="私のポートフォリオ一覧" />
       <div className="flex flex-col items-center justify-center">
         <section className="max-w-4xl pt-12">
           <h1 className="mb-8 text-4xl font-bold text-center">My Portfolio</h1>

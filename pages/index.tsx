@@ -21,7 +21,7 @@ const Home: NextPage<IndexProps> = ({ pages }) => {
     <Layout>
       <MetaData />
       <div className="flex flex-col items-center justify-center">
-        <ProfileSection />
+        <ProfileSection bio={false} />
         <ArticleSection pages={pages} title={"New Posts"} isToppage={true} />
       </div>
     </Layout>

@@ -10,7 +10,7 @@ const About: NextPage = () => {
     <Layout>
       <MetaData title="私について" />
       <div className="flex flex-col items-center justify-center">
-        <ProfileSection bio="Web開発の勉強を本格的に始めて6ヶ月目です。長期インターンに挑戦したい。" />
+        <ProfileSection bio={true} />
         <InternSection />
         <SkillSection />
       </div>

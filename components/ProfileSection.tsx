@@ -18,9 +18,9 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
         />
       </div>
       <h2 className="mb-2 text-4xl font-bold">Caltistals</h2>
-      <p className="mb-2 text-gray-400 s"> Junior Web Engineer</p>
+      <p className="mb-2 text-gray-400 "> Junior Web Engineer</p>
+      <p className="mb-3 text-sm text-gray-400">アニメオタク</p>
       <p className="mb-3 text-sm text-gray-400">Kindai Univ.</p>
-      {bio && <p className="mb-3 text-sm text-gray-400">{bio}</p>}
       <div className="flex justify-center mb-6 text-gray-500">
         {/* Twitter */}
         {siteConfig.twitterUrl && (
@@ -95,6 +95,16 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
           </a>
         )}
       </div>
+      {bio && (
+        <p className="max-w-md mb-3 text-sm text-gray-500">
+          近畿大学理工学部情報学科に所属している3年生です。
+          大学でJavaを2年ほどやっていましたが、実際にエンジニアとして働くためにはスキル不足であると感じ始め、
+          2022年4月からWeb開発の独学を開始しました。
+          その後、Web開発（主にフロントエンド）にハマり、現在まで学習を続けています。
+          <br />
+          サマーインターンで実務でエンジニアとして働くことの魅力を知ったので、卒業まではエンジニアの長期インターンに挑戦していきたいです。
+        </p>
+      )}
     </section>
   );
 };

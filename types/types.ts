@@ -16,7 +16,7 @@ export type ArticleSectionProps = {
 };
 
 export type ProfileSectionProps = {
-  bio?: string;
+  bio: boolean;
 };
 
 export type IndexProps = { pages: PageType[] };
