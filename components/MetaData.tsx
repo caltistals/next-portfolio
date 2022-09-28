@@ -3,7 +3,9 @@ import { MetaDataProps } from "../types/types";
 import React from "react";
 
 const MetaData: React.FC<MetaDataProps> = ({ title }) => {
-  const metaTitle: string = title ? title : "caltistals.dev";
+  const metaTitle: string = title
+    ? `${title} | caltistals.dev`
+    : "caltistals.dev";
   return (
     <Head>
       <title>{metaTitle}</title>
