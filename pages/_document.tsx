@@ -36,7 +36,7 @@ export default class Document extends NextDocument {
             content="/favicons/browserconfig.xml"
           />{" "}
           <meta name="theme-color" content="#ffffff" />
-          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:card" content="summary" />
         </Head>
         <body>
           <Main />
