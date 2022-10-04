@@ -31,7 +31,10 @@ main {
   @apply px-4 py-2 border-l-4 border-gray-700 border-solid;
 }
 .nbr-block-code {
-  @apply text-sm;
+  @apply flex items-center justify-center max-w-4xl;
+}
+pre {
+  @apply max-w-xs text-sm sm:max-w-md md:max-w-xl lg:max-w-3xl xl:max-w-4xl;
 }
 /* Hide only scrollbar */
 .nbr-block-code pre::-webkit-scrollbar {
