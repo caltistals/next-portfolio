@@ -18,7 +18,7 @@ const ArticleSection: React.FC<
       {isToppage && (
         <div className="flex justify-center">
           <Link href="/articles">
-            <a className="px-3 py-2 border border-gray-200 rounded-md hover:text-blue-500">
+            <a className="px-3 py-2 bg-white border-2 border-gray-200 rounded-md hover:text-blue-500">
               More →
             </a>
           </Link>
