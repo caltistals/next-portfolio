@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-10 w-screen bg-white border-b-2 md:sticky md:border-b-0 md:border-r-2 h-14 md:h-screen md:top-0 md:w-16">
+    <nav className="fixed z-10 w-screen bg-emerald-900 md:sticky h-14 md:h-screen md:top-0 md:w-16">
       <div className="mt-5 ">
-        <ul className="flex justify-around md:items-center md:flex-col md:justify-start">
+        <ul className="flex justify-around text-white md:items-center md:flex-col md:justify-start">
           {/* Home Icon */}
-          <li className="relative mb-5 group ">
+          <li className="relative mb-5 group">
             <Link href="/">
               <a>
                 <svg
