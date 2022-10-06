@@ -5,7 +5,7 @@ const SkillSection: React.FC = () => {
       <div className="grid w-full gap-6 my-12 mt-10 sm:gap-6 sm:grid-cols-2 xl:gap-6 xl:grid-cols-3">
         {/* Card */}
         {/* Java */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70px"
@@ -53,7 +53,7 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">Java</h3>
-            <p className="mb-1 text-sm text-gray-400">
+            <p className="mb-1 text-sm text-gray-500">
               <time>2020.05</time>
               <span>-</span>
             </p>
@@ -65,7 +65,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* HTML */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70"
@@ -132,7 +132,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* CSS */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70"
@@ -195,7 +195,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* JavaScript */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70"
@@ -234,7 +234,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* TypeScript */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -277,7 +277,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* React */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70"
