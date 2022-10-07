@@ -19,7 +19,7 @@ main {
 }
 
 .nbr-inline-code {
-  @apply px-2 py-1 text-sm font-normal text-pink-500 break-words bg-gray-100 rounded;
+  @apply px-2 py-1 text-sm font-normal text-pink-500 break-words bg-white rounded;
 }
 .nbr-caption {
   @apply text-inherit opacity-70;
