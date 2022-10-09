@@ -5,7 +5,7 @@ const SkillSection: React.FC = () => {
       <div className="grid w-full gap-6 my-12 mt-10 sm:gap-6 sm:grid-cols-2 xl:gap-6 xl:grid-cols-3">
         {/* Card */}
         {/* Java */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden bg-white border-2 border-gray-200 rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70px"
@@ -57,7 +57,7 @@ const SkillSection: React.FC = () => {
               <time>2020.05</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-500 ">
               最も使用経験が長い言語です。
               <br />
               大学の実習でコンパイラを作るなどした。
@@ -65,7 +65,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* HTML */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden bg-white border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70"
@@ -120,11 +120,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">HTML</h3>
-            <p className="mb-1 text-sm text-gray-400">
+            <p className="mb-1 text-sm text-gray-500">
               <time>2022.04</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-500">
               Semanticな書き方が難しい・・
               <br />
               JSXでよく使っています。
@@ -132,7 +132,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* CSS */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden bg-white border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70"
@@ -183,11 +183,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">CSS</h3>
-            <p className="mb-1 text-sm text-gray-400">
+            <p className="mb-1 text-sm text-gray-500">
               <time>2022.04</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-500">
               個人的に最も強敵。
               <br />
               こいつを倒す方法を知りたい。
@@ -195,7 +195,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* JavaScript */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden bg-white border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70"
@@ -222,11 +222,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">JavaScript</h3>
-            <p className="mb-1 text-sm text-gray-400">
+            <p className="mb-1 text-sm text-gray-500">
               <time>2022.04</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-500">
               初めて触った動的型付け言語。
               <br />
               最近はあまり使ってないです。
@@ -234,7 +234,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* TypeScript */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden bg-white border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -265,11 +265,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">TypeScript</h3>
-            <p className="mb-1 text-sm text-gray-400">
+            <p className="mb-1 text-sm text-gray-500">
               <time>2022.07</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-500">
               厳格さと柔軟さが両立していて好きです。
               <br />
               今メインで使用しています。
@@ -277,7 +277,7 @@ const SkillSection: React.FC = () => {
           </div>
         </div>
         {/* React */}
-        <div className="grid content-between max-w-xs p-5 overflow-hidden border-2 border-gray-200 2-full rounded-2xl">
+        <div className="grid content-between max-w-xs p-5 overflow-hidden bg-white border-2 border-gray-200 2-full rounded-2xl">
           <div className="flex items-center justify-center mb-2">
             <svg
               width="70"
@@ -296,11 +296,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">React</h3>
-            <p className="mb-1 text-sm text-gray-400">
+            <p className="mb-1 text-sm text-gray-500">
               <time>2022.05</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-500">
               最も力を入れて勉強してます。
               <br />
               早く使いこなせるようになりたいです。
