@@ -2,7 +2,7 @@ import React from "react";
 
 const InternSection: React.FC = () => {
   return (
-    <section className="max-w-4xl mb-12">
+    <section className="mb-12">
       <h1 className="mb-8 text-4xl font-bold text-center">Intern</h1>
       <ol className="space-y-4">
         <li className="flex gap-4">

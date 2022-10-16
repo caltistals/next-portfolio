@@ -7,7 +7,7 @@ const ArticleSection: React.FC<
   ArticleSectionProps & { title: string; isToppage: boolean }
 > = ({ pages, title, isToppage }) => {
   return (
-    <section className="max-w-4xl pt-12">
+    <section className="pt-12">
       <h1 className="mb-8 text-4xl font-bold text-center">{title}</h1>
       <div className="grid w-full my-12 mt-10 sm:gap-6 sm:grid-cols-2 xl:gap-6 xl:grid-cols-3">
         {/* Card */}

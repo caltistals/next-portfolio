@@ -5,7 +5,7 @@ import { ProfileSectionProps } from "../types/types";
 
 const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
   return (
-    <section className="flex flex-col items-center justify-center max-w-4xl pt-12 mb-12">
+    <section className="flex flex-col items-center justify-center pt-12 mb-12">
       <div className="mb-3 ">
         <Image
           className="static w-full rounded-full "
@@ -19,7 +19,6 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
       </div>
       <h2 className="mb-2 text-4xl font-bold">Caltistals</h2>
       <p className="mb-2 text-gray-400 "> Junior Web Developer</p>
-      {/* <p className="mb-3 text-sm text-gray-400">アニメオタク</p> */}
       <p className="mb-3 text-sm text-gray-400">Kindai Univ.</p>
       <div className="flex justify-center mb-6 text-gray-500">
         {/* Twitter */}
