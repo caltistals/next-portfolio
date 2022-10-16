@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 h1 {
-  @apply p-1 mt-0 mb-2 text-4xl font-semibold leading-tight;
+  @apply mt-0 mb-2 text-4xl font-semibold leading-tight;
 }
 h2 {
   @apply mt-0 mb-2 text-3xl font-semibold leading-tight;
@@ -31,10 +31,7 @@ main {
   @apply px-4 py-2 border-l-4 border-gray-700 border-solid;
 }
 .nbr-block-code {
-  @apply flex items-center justify-center max-w-4xl;
-}
-pre {
-  @apply max-w-xs text-sm sm:max-w-md md:max-w-xl lg:max-w-3xl xl:max-w-4xl;
+  @apply text-sm;
 }
 /* Hide only scrollbar */
 .nbr-block-code pre::-webkit-scrollbar {
@@ -56,7 +53,7 @@ pre {
   margin-inline-start: 8px;
 }
 .nbr-block-ul {
-  @apply pl-4 list-disc;
+  @apply pl-4 font-light leading-relaxed list-disc;
 }
 .nbr-block-ol {
   @apply pl-4 list-decimal;
@@ -73,4 +70,8 @@ pre {
 }
 .nbr-block-table_of_contents a {
   @apply text-gray-600 underline;
+}
+
+.nbr-image {
+  @apply flex items-center justify-center;
 }

@@ -45,15 +45,15 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 const Article: NextPage<ArticleProps> = ({ page, blocks }) => {
   return (
     <Layout>
-      <MetaData title={`${getText(page.properties.name.title)}`} />
-      <article className="flex flex-col ">
+      <article className="relative w-full mb-0">
+        <MetaData title={`${getText(page.properties.name.title)}`} />
         {/* meta section */}
-        <div className="my-12 ">
+        <div className="my-12">
           <ArticleMeta page={page} />
         </div>
 
         {/* article */}
-        <div className="block max-w-4xl my-12">
+        <div className="flex flex-col my-12">
           <NotionBlocks blocks={blocks} isCodeHighlighter={true} />
         </div>
       </article>
