@@ -1,12 +1,7 @@
 import type { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import ArticleCard from "../../components/ArticleCard";
 import ArticleSection from "../../components/ArticleSection";
 import Layout from "../../components/Layout";
 import MetaData from "../../components/MetaData";
-import ProfileSection from "../../components/ProfileSection";
 import { IndexProps } from "../../types/types";
 import { fetchPages } from "../../utils/notion";
 
