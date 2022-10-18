@@ -15,6 +15,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
           width={150}
           height={150}
           quality={30}
+          unoptimized
         />
       </div>
       <h2 className="mb-2 text-4xl font-bold">Caltistals</h2>

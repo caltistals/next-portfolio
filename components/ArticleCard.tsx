@@ -18,6 +18,7 @@ const ArticleCard: FC<ArticleCardProps> = ({ page }) => {
               width={330}
               height={150}
               quality={30}
+              unoptimized
             />
           </div>
           {/* title & date*/}

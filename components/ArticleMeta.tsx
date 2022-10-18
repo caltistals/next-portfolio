@@ -17,6 +17,7 @@ const ArticleMeta: React.FC<ArticleMetaProps> = ({ page }) => {
           width={640}
           height={360}
           quality={100}
+          unoptimized
         />
       </div>
 
