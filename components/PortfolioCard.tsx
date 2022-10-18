@@ -22,6 +22,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({
           width={330}
           height={150}
           quality={70}
+          unoptimized
         />
       </div>
       {/* title */}
