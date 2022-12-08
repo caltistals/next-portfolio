@@ -2,6 +2,12 @@ import { CareerProps } from "./Career.type";
 
 export const internHistory: CareerProps[] = [
   {
+    companyName: "株式会社80&Company",
+    role: "Technology Consulting 部 (フロントエンド)",
+    fromDate: "2022/12/01",
+    untilDate: "現在",
+  },
+  {
     companyName: "フェンリル株式会社",
     role: "ウェブエンジニアコース",
     fromDate: "2022/09/05",
