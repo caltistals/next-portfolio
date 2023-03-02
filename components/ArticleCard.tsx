@@ -26,7 +26,7 @@ const ArticleCard: FC<ArticleCardProps> = ({ page }) => {
             <h2 className="mb-3 text-base font-bold group-hover:text-blue-500">
               {getText(page.properties.name.title)}
             </h2>
-            <p className="text-xs text-gray-700">
+            <p className="text-sm text-gray-700 font-normal">
               {getDate(page.properties.published.date)}
             </p>
           </div>

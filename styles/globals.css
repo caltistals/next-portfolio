@@ -12,7 +12,7 @@ h3 {
   @apply mt-0 mb-2 text-2xl font-semibold leading-tight;
 }
 p {
-  @apply mt-0 mb-4 text-base font-light leading-relaxed text-gray-800;
+  @apply mt-0 mb-4 text-base font-light leading-relaxed;
 }
 main {
   @apply flex flex-col items-center justify-center min-h-screen;
