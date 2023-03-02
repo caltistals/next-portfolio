@@ -53,11 +53,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">Java</h3>
-            <p className="mb-1 text-sm text-gray-500">
+            <p className="mb-1 text-sm text-gray-800">
               <time>2020.05</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-500 ">
+            <p className="text-xs text-gray-800 ">
               最も使用経験が長い言語です。
               <br />
               大学の実習でコンパイラを作るなどした。
@@ -120,11 +120,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">HTML</h3>
-            <p className="mb-1 text-sm text-gray-500">
+            <p className="mb-1 text-sm text-gray-800">
               <time>2022.04</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-800">
               Semanticな書き方が難しい・・
               <br />
               JSXでよく使っています。
@@ -183,11 +183,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">CSS</h3>
-            <p className="mb-1 text-sm text-gray-500">
+            <p className="mb-1 text-sm text-gray-800">
               <time>2022.04</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-800">
               個人的に最も強敵。
               <br />
               こいつを倒す方法を知りたい。
@@ -222,11 +222,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">JavaScript</h3>
-            <p className="mb-1 text-sm text-gray-500">
+            <p className="mb-1 text-sm text-gray-800">
               <time>2022.04</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-800">
               初めて触った動的型付け言語。
               <br />
               最近はあまり使ってないです。
@@ -265,11 +265,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">TypeScript</h3>
-            <p className="mb-1 text-sm text-gray-500">
+            <p className="mb-1 text-sm text-gray-800">
               <time>2022.07</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-800">
               厳格さと柔軟さが両立していて好きです。
               <br />
               今メインで使用しています。
@@ -296,11 +296,11 @@ const SkillSection: React.FC = () => {
           </div>
           <div>
             <h3 className="mb-1">React</h3>
-            <p className="mb-1 text-sm text-gray-500">
+            <p className="mb-1 text-sm text-gray-800">
               <time>2022.05</time>
               <span>-</span>
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-800">
               最も力を入れて勉強してます。
               <br />
               早く使いこなせるようになりたいです。
