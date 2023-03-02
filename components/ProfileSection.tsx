@@ -9,7 +9,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
       <div className="mb-3 ">
         <Image
           className="static w-full rounded-full "
-          src="/profileIcon.png"
+          src="/profileIcon.jpg"
           alt="My Icon"
           objectFit="cover"
           width={150}
