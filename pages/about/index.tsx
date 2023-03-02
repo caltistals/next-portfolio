@@ -3,7 +3,7 @@ import InternSection from "../../components/InternSection";
 import Layout from "../../components/Layout";
 import MetaData from "../../components/MetaData";
 import ProfileSection from "../../components/ProfileSection";
-import SkillSection from "../../components/SkillSection";
+import SkillSection from "../../components/skill/SkillSection";
 
 const About: NextPage = () => {
   return (

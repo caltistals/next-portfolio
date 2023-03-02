@@ -9,7 +9,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
       <div className="mb-3 ">
         <Image
           className="static w-full rounded-full "
-          src="/profileIcon.png"
+          src="/profileIcon.jpg"
           alt="My Icon"
           objectFit="cover"
           width={150}
@@ -34,7 +34,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
               focusable="false"
               data-prefix="fab"
               data-icon="twitter"
-              className="w-6 h-full mx-4 hover:text-blue-500 hover:scale-110"
+              className="w-6 h-full mx-4 hover:text-emerald-500 hover:scale-110"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -58,7 +58,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
               focusable="false"
               data-prefix="fab"
               data-icon="instagram"
-              className="w-6 h-full mx-4 hover:text-blue-500 hover:scale-110"
+              className="w-6 h-full mx-4 hover:text-emerald-500 hover:scale-110"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -82,7 +82,7 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
               focusable="false"
               data-prefix="fab"
               data-icon="github"
-              className="w-6 h-full mx-4 hover:text-blue-500 hover:scale-110"
+              className="w-6 h-full mx-4 hover:text-emerald-500 hover:scale-110"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -99,10 +99,12 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({ bio }) => {
         <p className="max-w-md mb-3 text-sm text-gray-800">
           近畿大学理工学部情報学科に所属している3年生です。
           大学でJavaを2年ほどやっていましたが、実際にエンジニアとして働くためにはスキル不足であると感じ始め、
-          2022年4月からWeb開発の独学を開始しました。
-          その後、Web開発（主にフロントエンド）にハマり、現在まで学習を続けています。
+          2022年4月からWeb開発の独学を始めました。
           <br />
-          サマーインターンで実務でエンジニアとして働くことの魅力を知ったので、卒業まではエンジニアの長期インターンに挑戦していきたいです。
+          将来はソフトウェアエンジニアとして、様々な非効率を解決していきたいと考えています。
+          <br />
+          また、現在はフロントエンド中心に開発を行っていますが、将来的にはフルスタックに経験を積み、
+          様々なアプローチで課題解決を行えるようになりたいです。
         </p>
       )}
     </section>
